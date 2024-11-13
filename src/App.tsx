@@ -1,8 +1,8 @@
-import imageBgBody from "./assets/image.jpg";
+import { AuthForm } from "./components/AuthForm/AuthForm";
 function App() {
   return (
     <div>
-        <img src={imageBgBody} className="w-full max-h-min" />
+        <AuthForm />
     </div>
   );
 }
