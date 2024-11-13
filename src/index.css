@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gibson:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.text-place-holder{
+  @apply font-openSans text-lightGray text-18 font-regular uppercase;
+}
+
+.text-forget-password{
+  @apply font-openSans text-lightGray text-14 font-regular;
+}
+
+.text-sign-in{
+  @apply font-openSans text-navyBlue text-14 font-regular;
+}
+
+.text-btn-login{
+  @apply font-openSans font-bold text-20 
+}
+
+.btn{
+  @apply bg-brightBlue text-smokeWhite rounded-btnradius shadow-btn_shadow w-btn_width h-btn_height opacity-100;
+}
+
+.inputForm{
+  @apply bg-white shadow-input_shadow opacity-100
+}
