@@ -1,9 +1,7 @@
-import { AuthForm } from "./components/AuthForm/AuthForm";
+import { Login } from "./pages/Auth/Login";
 function App() {
   return (
-    <div>
-        <AuthForm />
-    </div>
+<Login />
   );
 }
 

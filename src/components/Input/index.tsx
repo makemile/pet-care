@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 
 interface InputProps {
-  label: string;
+  // label:string;
   type: string;
   name: string;
   placeholder: string;
@@ -10,10 +10,10 @@ interface InputProps {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ label, type, name, placeholder, error, autocomplete, ...props }, ref) => {
+  ({type, name, placeholder, error, autocomplete, ...props }, ref) => {
     return (
-      <div>
-        <label htmlFor={name}>{label}</label>
+      <div className="grid grid-rows-1">
+        {/* <label htmlFor={name}>{label}</label> */}
         <input
           autoComplete={autocomplete}
           ref={ref}
@@ -21,6 +21,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           name={name}
           placeholder={placeholder}
           {...props}
+          className="inputForm text-place-holder"
         />
         {error && <span>{error}</span>}
       </div>

@@ -52,9 +52,7 @@ export default {
         extrabold: 800,
       },
       borderRadius: {
-        btnradius: {
-          btn_radius: "38px",
-        },
+        btnradius: "38px",
       },
       boxShadow: {
         btn_shadow: "0px 3px 6px #2C1DAD29",

@@ -10,7 +10,7 @@ export const AuthForm: React.FC = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isDirty, isValid },
   } = useForm<loginForm>({
     resolver: zodResolver(loginSchema),
   });
@@ -20,24 +20,46 @@ export const AuthForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+   
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="grid grid-rows-3 gap-3.5"
+    >
+      <div>
       <Input
-        label="Email"
+        // label="email"
         autocomplete="on"
         type="text"
         placeholder="Inserte email"
         {...register("email")}
-        error={errors.email?.message}
       />
-      <Input
-        label="Password"
+       {errors.email && (
+        <span className="text-red-500 text-sm p-1">{errors.email.message}</span>
+      )}
+      </div>
+     <div>
+     <Input
+        // label="password"
         autocomplete="on"
         type="password"
         placeholder="inserte su contraseña"
         {...register("password")}
-        error={errors.password?.message}
       />
-      <button type="submit">Login</button>
+      {errors.password && (
+        <span className="text-red-500 text-sm p-1">{errors.password.message}</span>
+      )}
+     </div>
+
+      <span className="text-forget-password flex justify-end items-center">
+        ¿Olvidaste tú contraseña
+      </span>
+
+      <div className="flex justify-center">
+        <button type="submit" className={`btn text-btn-login ${!isDirty || !isValid ? 'opacity-50' : ''} `} disabled={!isDirty || !isValid}>
+        INICIAR SESIÓN
+        </button>
+      </div>
     </form>
+   
   );
 };
