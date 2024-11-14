@@ -1,8 +1,6 @@
-import { Login } from "./pages/Auth/Login";
+import { RoutesComponents } from "./routes/Routes";
 function App() {
-  return (
-<Login />
-  );
+  return <RoutesComponents />;
 }
 
 export default App;

@@ -1,23 +1,30 @@
-
-import { loginSucces, loginFailure } from "../store/auth.slice";
 import { loginUser } from "../services/Auth.service";
-// import { AppDispatch } from "../store/store";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 export const useAuth = () => {
+  const dispatch = useDispatch();
+  const isAuthenticated = useSelector(
+    (state: RootState) => state.auth.isAuthenticated
+  );
+  const loading = useSelector((state: RootState) => state.auth.loading);
+  console.log(loading)
+  const token = useSelector((state: RootState) => state.auth.token);
+  const error = useSelector((state: RootState) => state.auth.error);
 
-
-  const login = (email: string, password: string) => async (dispatch:any) =>{
+  const login = async (email: string, password: string) => {
     try {
-      const token = await loginUser(email, password);
-      console.log(token)
-      if(token){
-        console.log('recibido', token)
-        dispatch(loginSucces(token));
+      console.log(loading)
+      const token = await loginUser(email, password, dispatch);
+      console.log(token);
+      if (token) {
+        console.log("recibido", token);
+        console.log(loading)
       }
     } catch (error: any) {
-      dispatch(loginFailure(error.message));
+      console.log('Login fallido');
     }
   };
 
-  return {login}
+  return { isAuthenticated, token, error, login, loading };
 };
