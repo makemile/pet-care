@@ -43,6 +43,10 @@ body {
   @apply border-l-8 border-coral_red h-10;
 }
 
+.text-items-nav{
+  @apply text-18 font-openSans font-normal text-white opacity-100;
+}
+
 .btn {
   @apply bg-brightBlue text-smokeWhite rounded-btnradius shadow-btn_shadow w-btn_width h-btn_height transition-opacity ease-in-out duration-300;
 }
@@ -55,18 +59,21 @@ body {
   @apply bg-white shadow-input_shadow opacity-100 w-input_width h-input_height py-3 px-4 outline-none;
 }
 
-/* .container {
+.section_header{
+  @apply w-full bg-coral_red flex justify-center
+}
 
-  background-color: brown;
-} */
+.header{
+  @apply bg-coral_red flex w-[90%] justify-between  items-center;
+}
 
 #root {
   width: 100%;
-  max-width: 2000px;
+  /* max-width: 2000px; */
   height: 100%;
   /* max-height: 900px;                       */
   background-color: burlywood;
-  display: flex;
+  /* display: flex; */
 }
 
 /* svg {

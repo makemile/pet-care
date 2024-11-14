@@ -1,7 +1,8 @@
 import axios from "axios";
-import { loginFailure, loginSucces } from "../store/auth.slice";
+import { loginStart, loginFailure, loginSucces } from "../store/auth.slice";
 
 export const loginUser = async (email: string, password: string, dispatch: any) => {
+  dispatch(loginStart());
   try {
     const response = await axios.post("https://reqres.in/api/login", {
       email,

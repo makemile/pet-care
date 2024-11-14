@@ -5,12 +5,13 @@ import { loginForm, loginSchema } from "../validateForm/LoginForm";
 import { useAuth } from "../../hooks/useAuth";
 import { Input } from "../Input";
 import { useNavigate } from "react-router-dom";
-import sppiner from "../../assets/images/spinner.svg";
+// import sppiner from "../../assets/images/spinner.svg";
 
 export const AuthForm: React.FC = () => {
   const { login, isAuthenticated, loading, error } = useAuth();
   console.log(loading);
-  const Navigate = useNavigate();
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -25,9 +26,9 @@ export const AuthForm: React.FC = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      Navigate("/home");
+      navigate("/home");
     }
-  }, [isAuthenticated, Navigate]);
+  }, [isAuthenticated]);
 
   return (
     <form

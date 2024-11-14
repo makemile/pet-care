@@ -1,7 +1,8 @@
-
-
-
-
 export const Home = () => {
-  return <>hola bebe</>;
+  return (
+    <>
+      <main>
+      </main>
+    </>
+  );
 };
