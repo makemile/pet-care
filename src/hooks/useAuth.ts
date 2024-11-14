@@ -1,18 +1,23 @@
-import { useDispatch } from "react-redux";
+
 import { loginSucces, loginFailure } from "../store/auth.slice";
 import { loginUser } from "../services/Auth.service";
+import { AppDispatch } from "../store/store";
 
 export const useAuth = () => {
-  const dispatch = useDispatch();
 
-  const login = async (email: string, password: string) => {
+
+  const login = (email: string, password: string) => async (dispatch:AppDispatch) =>{
     try {
       const token = await loginUser(email, password);
-      dispatch(loginSucces(token));
+      console.log(token)
+      if(token){
+        console.log('recibido', token)
+        dispatch(loginSucces(token));
+      }
     } catch (error: any) {
       dispatch(loginFailure(error.message));
     }
   };
 
-  return { login };
+  return {login}
 };

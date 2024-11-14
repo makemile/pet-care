@@ -6,5 +6,4 @@ export const store = configureStore({
     auth: authReducer,
   },
 });
-
-console.log(store);
+export type AppDispatch = typeof store.dispatch;
