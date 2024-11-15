@@ -39,12 +39,27 @@ body {
   @apply text-darkGray text-25 uppercase opacity-100 font-gibson font-semibold;
 }
 
+.text-section-hero-title {
+  @apply text-white font-poppins font-regular text-84 opacity-100;
+}
+.text-section-hero {
+  @apply text-white font-openSans font-regular text-start text-24 opacity-100;
+}
+
 .border-left {
   @apply border-l-8 border-coral_red h-10;
 }
 
-.text-items-nav{
+.text-items-nav {
   @apply text-18 font-openSans font-normal text-white opacity-100;
+}
+
+.text-card-service {
+  @apply text-24 font-comfortaa font-regular text-gray_medium;
+}
+
+.card-service {
+  @apply w-52 h-52 bg-white shadow-card_service rounded-cardradius opacity-100 grid-rows-1 justify-items-center flex items-center flex-col justify-around p-2;
 }
 
 .btn {
@@ -59,56 +74,42 @@ body {
   @apply bg-white shadow-input_shadow opacity-100 w-input_width h-input_height py-3 px-4 outline-none;
 }
 
-.section_header{
-  @apply w-full bg-coral_red flex justify-center
+.section_header {
+  @apply w-full bg-coral_red flex justify-center;
 }
 
-.header{
+.header {
   @apply bg-coral_red flex w-[90%] justify-between  items-center;
 }
 
-#root {
+.main {
+  @apply w-full  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center;
+}
+
+.hero-section {
+  @apply w-[90%] grid grid-cols-2 relative items-center h-full;
+}
+.service-section {
+  @apply w-[90%] grid grid-cols-2 relative place-items-start h-[65%];
+}
+
+.reviewservice-section {
+  @apply w-[90%]  h-[65%] grid grid-rows-3 justify-items-center;
+}
+
+#root,
+.content-main {
   width: 100%;
-  /* max-width: 2000px; */
   height: 100%;
-  /* max-height: 900px;                       */
   background-color: burlywood;
-  /* display: flex; */
 }
 
-/* svg {
-  display: inline-block;
-  position: absolute;
-  transform: rotate(180deg);
-  transform-origin: center;
-  right: 100;
-} */
+.slick-prev:before,
+.slick-next:before {
+  color: #ff6752 !important;
+  font-size: 64px !important;
+}
 
-/* .wave {
-  position: relative;
-  height: 70px;
-  width: 600px;
-  background: #e0efe3;
+.slick-prev {
+  left: -80px !important;
 }
-.wave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 340px;
-  height: 80px;
-  background-color: white;
-  right: -5px;
-  top: 40px;
-}
-.wave:after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 300px;
-  height: 70px;
-  background-color: #e0efe3;
-  left: 0;
-  top: 27px;
-} */

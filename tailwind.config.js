@@ -19,7 +19,6 @@ export default {
         gray_light: "#F3F6FB",
         yellow_vivid: "#FFE530",
         coral_red: "#FF6752",
-        light_blue_gray: "#F3F6FB",
         yellow_gold: "#FEB53A",
         orange_dark: "#D65C15",
         amber_light: "#FFCC55",
@@ -33,6 +32,9 @@ export default {
         openSans: ["Open Sans", "sans-serif"],
         gibson: ["Gibson", "sans-serif"], // Alternativa a Museo Sans Rounded
         comfortaa: ["Comfortaa", "sans-serif"], // Alternativa a Segoe UI
+        poppins: ["Poppins", "sans-serif"],
+        comfortaa: ['Comfortaa', 'cursive'],
+
       },
       fontSize: {
         14: "0.875rem",
@@ -53,10 +55,13 @@ export default {
       },
       borderRadius: {
         btnradius: "38px",
+        cardradius: "20px"
       },
       boxShadow: {
         btn_shadow: "0px 3px 6px #2C1DAD29",
         input_shadow: "2px 3px 4px #00000029",
+        btn_zipcode: "0px 3px 6px rgba(253, 104, 69, 0.30)",
+        card_service: "0px 3px 6px #00000029"
       },
       width: {
         btn_width: "239px",

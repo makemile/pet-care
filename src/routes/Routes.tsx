@@ -17,13 +17,55 @@ export const RoutesComponents = () => {
         element={
           <ProtectdRoute isAuthenticated={isAuthenticated}>
             <>
-              <div className="relative">
-                <Header />
-
-                <Home />
-              </div>
+              <Header />
+              <Home />
             </>
           </ProtectdRoute>
+        }
+      />
+      <Route
+        path="/Location"
+        element={
+          <>
+            <Header />
+            <Home />
+          </>
+        }
+      />
+      <Route
+        path="/Blog"
+        element={
+          <>
+            <Header />
+            <Home />
+          </>
+        }
+      />
+      <Route
+        path="/Services"
+        element={
+          <>
+            <Header />
+            <Home />
+          </>
+        }
+      />
+      <Route
+        path="/AboutUs"
+        element={
+          <>
+            <Header />
+            <Home />
+          </>
+        }
+      />
+      <Route
+        path="/Franchise"
+        element={
+          <>
+            <Header />
+            <Home />
+          </>
         }
       />
     </Routes>

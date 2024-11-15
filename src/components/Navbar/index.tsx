@@ -17,7 +17,7 @@ export const NavLinks: React.FC = () => {
         <NavLink to="/AboutUs">About Us</NavLink>
       </li>
       <li>
-        <NavLink to="/FranchiseWithUs">Franchise With Us</NavLink>
+        <NavLink to="/Franchise">Franchise With Us</NavLink>
       </li>
     </>
   );
