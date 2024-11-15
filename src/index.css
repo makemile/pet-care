@@ -9,13 +9,7 @@
 }
 
 body {
-  background: blueviolet;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply bg-gray_light w-full h-[100vh] m-auto flex justify-center items-center;
 }
 
 .text-place-holder {
@@ -51,6 +45,14 @@ body {
 
 .text-items-nav {
   @apply text-18 font-openSans font-normal text-white opacity-100;
+}
+
+.text-items-footer {
+  @apply text-white text-14 font-comfortaa font-regular;
+}
+
+.text-title-footer {
+  @apply text-yellow_vivid text-24 font-comfortaa font-bold;
 }
 
 .text-card-service {
@@ -100,15 +102,16 @@ body {
   @apply w-[90%] grid grid-cols-2 relative items-baseline justify-items-center z-50;
 }
 
-.suscription-section{
+.suscription-section {
   @apply w-[68%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
 }
 
-#root,
-.content-main {
-  width: 100%;
-  height: 100%;
-  background-color: burlywood;
+#root {
+  @apply w-full h-full;
+}
+
+.footer {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full bg-coral_red h-[350px]  rounded-top_full items-center justify-items-center;
 }
 
 .slick-prev:before,

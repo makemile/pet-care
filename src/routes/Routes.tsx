@@ -4,6 +4,7 @@ import { Login } from "../pages/Auth/Login";
 import { Home } from "../pages/Home";
 import { useAuth } from "../hooks/useAuth";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer/Footer";
 
 export const RoutesComponents = () => {
   const { isAuthenticated } = useAuth();
@@ -19,6 +20,7 @@ export const RoutesComponents = () => {
             <>
               <Header />
               <Home />
+              <Footer />
             </>
           </ProtectdRoute>
         }

@@ -168,7 +168,7 @@ export const Home = () => {
               Care Provider! We train every team member and provide ongoing
               support to help you get the most from your experience.
             </p>
-            <button className="rounded-btnradius w-[150px] h-[60px] bg-smokeWhite text-Coral_flame text-20 font-openSans font-bold">
+            <button className="rounded-btnradius w-[150px] h-[60px] bg-smokeWhite text-Coral_flame text-20 font-openSans font-bold shadow-card_service">
               Join Now
             </button>
           </div>

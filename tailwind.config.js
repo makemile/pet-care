@@ -56,7 +56,8 @@ export default {
       },
       borderRadius: {
         btnradius: "38px",
-        cardradius: "20px"
+        cardradius: "20px",
+        top_full : "60% 60% 0 0",
       },
       boxShadow: {
         btn_shadow: "0px 3px 6px #2C1DAD29",
