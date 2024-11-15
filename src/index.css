@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Gibson:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -83,7 +82,7 @@ body {
 }
 
 .main {
-  @apply w-full  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center;
+  @apply w-full  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center gap-40 relative;
 }
 
 .hero-section {
@@ -94,7 +93,15 @@ body {
 }
 
 .reviewservice-section {
-  @apply w-[90%]  h-[65%] grid grid-rows-3 justify-items-center;
+  @apply w-[90%]  h-[65%] grid grid-rows-2 justify-items-center;
+}
+
+.reserve-section {
+  @apply w-[90%] grid grid-cols-2 relative items-baseline justify-items-center z-50;
+}
+
+.suscription-section{
+  @apply w-[68%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
 }
 
 #root,

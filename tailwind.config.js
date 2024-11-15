@@ -27,13 +27,14 @@ export default {
         blue_dark_trans: "#3220CE29",
         red_bright: "#FD6845",
         blue_dark: "#3220CE80",
+        Coral_flame:"#FE6845"
       },
       fontFamily: {
         openSans: ["Open Sans", "sans-serif"],
         gibson: ["Gibson", "sans-serif"], // Alternativa a Museo Sans Rounded
         comfortaa: ["Comfortaa", "sans-serif"], // Alternativa a Segoe UI
         poppins: ["Poppins", "sans-serif"],
-        comfortaa: ['Comfortaa', 'cursive'],
+        comforta: ['Comfortaa'],
 
       },
       fontSize: {
@@ -70,6 +71,9 @@ export default {
       height: {
         btn_height: "75px",
         input_height: "48px",
+      },
+      screens: {
+        '3xl': '2000px',
       },
     },
   },

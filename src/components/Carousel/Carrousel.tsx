@@ -14,7 +14,7 @@ export const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-7xl mx-auto ">
+    <div className="w-full max-w-5xl mx-auto ">
       <Slider {...settings}>
         <div className="flex justify-center bg-coral_red opacity-100 rounded-cardradius relative">
           <div className="flex flex-col items-center gap-2 w-[400px] h-[280px] justify-center">
