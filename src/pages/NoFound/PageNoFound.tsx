@@ -1,9 +1,9 @@
-import logo_pet from "../../assets/images/logo_pet.svg";
+import logo_pet from "../../assets/svg/logo_pet.svg";
 
 export const NoFoundPage = () => {
   return (
     <>
-      <div className="bg-coral_red w-[38%] h-[59%] custom-border-radius">
+      <div className="bg-brightBlue w-[38%] h-[59%] custom-border-radius">
         <header className="flex p-10">
           <div className="bg-white w-20 h-20 rounded-full flex p-2">
             <img src={logo_pet} />
@@ -17,7 +17,7 @@ export const NoFoundPage = () => {
           </p>
         </div>
         <div className="flex justify-center">
-          <button className="w-60 h-14 bg-brightBlue font-semibold text-white flex justify-center text-18 items-center rounded-full">
+          <button className="w-60 h-14 bg-white font-semibold text-gray_medium flex justify-center text-18 items-center rounded-full">
             Next to Home
           </button>
         </div>

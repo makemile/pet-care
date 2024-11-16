@@ -1,5 +1,5 @@
 import { AuthForm } from "../../components/AuthForm/AuthForm";
-import logo_pet from "../../assets/images/logo_pet.svg";
+import logo_pet from "../../assets/svg/logo_pet.svg";
 export const Login = () => {
   return (
     <div className="grid grid-cols-2 bg-white justify-items-center items-center w-full h-full">

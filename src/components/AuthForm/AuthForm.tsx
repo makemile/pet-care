@@ -5,6 +5,7 @@ import { loginForm, loginSchema } from "../validateForm/LoginForm";
 import { useAuth } from "../../hooks/useAuth";
 import { Input } from "../Input";
 import { NavLink, useNavigate } from "react-router-dom";
+import { Loading } from "../Loading/loading";
 
 export const AuthForm: React.FC = () => {
   const { login, isAuthenticated, loading, error } = useAuth();
@@ -21,6 +22,7 @@ export const AuthForm: React.FC = () => {
 
   const onSubmit = (data: loginForm) => {
     login(data.email, data.password);
+    console.log("Estado de loading:", data.email, data.password);
   };
 
   useEffect(() => {
@@ -28,6 +30,8 @@ export const AuthForm: React.FC = () => {
       navigate("/home", { replace: true });
     }
   }, [isAuthenticated, navigate]);
+
+  console.log("Estado de loading:", loading);
 
   return (
     <>
@@ -73,7 +77,8 @@ export const AuthForm: React.FC = () => {
 
         <div className="flex justify-center">
           {loading ? (
-            <button type="submit" className={`btn text-btn-login`}>
+            <button type="submit" className="btn text-btn-login flex justify-center items-center">
+              <Loading />
               Processing...
             </button>
           ) : (

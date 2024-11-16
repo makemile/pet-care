@@ -1,13 +1,13 @@
 import { MainLayoutHero } from "../../components/Layout/Main/MainLayoutHero";
 import dog_golden from "../../assets/images/pet_golden.png";
-import dog_walk from "../../assets/images/dog.svg";
-import pet_sitting from "../../assets/images/cat.svg";
-import house_care from "../../assets/images/home.svg";
-import pad from "../../assets/images/pad.svg";
+import dog_walk from "../../assets/svg/dog.svg";
+import pet_sitting from "../../assets/svg/cat.svg";
+import house_care from "../../assets/svg/home.svg";
+import pad from "../../assets/svg/pad.svg";
 import { Carousel } from "../../components/Carousel/Carrousel";
-import reserve from "../../assets/images/reserve.svg";
-import relax from "../../assets/images/relax.svg";
-import match from "../../assets/images/match.svg";
+import reserve from "../../assets/svg/reserve.svg";
+import relax from "../../assets/svg/relax.svg";
+import match from "../../assets/svg/match.svg";
 import dog_footer from "../../assets/images/dog.png";
 
 export const Home = () => {

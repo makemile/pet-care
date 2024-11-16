@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 
 export const NavLinks: React.FC = () => {
+  const { signOut } = useAuth();
+
+  const handleSignOut = () => {
+    signOut();
+  };
+
   return (
     <>
       <li>
@@ -18,6 +25,18 @@ export const NavLinks: React.FC = () => {
       </li>
       <li>
         <NavLink to="/Franchise">Franchise With Us</NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/"
+          className="text-btn-signout"
+          onClick={(e) => {
+            e.preventDefault();
+            handleSignOut();
+          }}
+        >
+          sign out
+        </NavLink>
       </li>
     </>
   );

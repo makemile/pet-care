@@ -1,5 +1,5 @@
 import { Navbar } from "../Navbar";
-import logo_pet from "../../assets/images/logo_pet.svg";
+import logo_pet from "../../assets/svg/logo_pet.svg";
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
