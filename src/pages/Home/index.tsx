@@ -15,7 +15,7 @@ export const Home = () => {
     <>
       <main className="main">
         <section className="hero-section">
-          <div className="grid grid-rows-1 gap-5 bg-coral_red">
+          <div className="grid grid-rows-1 gap-5 bg-coral_red p-2">
             <MainLayoutHero />
             <div className="flex items-center justify-start gap-5">
               <button className="btn">Schedule Service</button>
@@ -39,15 +39,15 @@ export const Home = () => {
         </section>
         <section className="service-section">
           <div className="grid grid-rows-1 gap-5">
-            <div>
-              <h3 className="text-coral_red text-48 font-bold font-comfortaa opacity-100">
+            <div className="flex flex-col gap-8">
+              <h3 className="text-coral_red text-48 font-extrabold font-comfortaa opacity-100">
                 Our Services
               </h3>
-              <p className="text-gray_neutral opacity-80 text-24 font-regular font-openSans">
+              <p className="text-gray_neutral opacity-80 text-24 font-regular font-openSans w-[60%]">
                 National Brand With a Local Feel. Experience the Fetch!
                 Difference
               </p>
-              <p className="text-24 text-coral_red font-comfortaa font-bold opacity-100">
+              <p className="text-24 text-coral_red font-comfortaa font-extrabold opacity-100">
                 Enter Your Location and Fetch Our Services
               </p>
             </div>
@@ -66,20 +66,21 @@ export const Home = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-rows-2 grid-flow-col gap-4 w-full justify-end">
+          <div className="grid grid-rows-2 grid-flow-col gap-8 w-full justify-end">
             <div className="card-service">
               <img src={dog_walk} />
               <p className="text-card-service">Dog Walking</p>
             </div>
 
-            <div className="card-service">
-              <img src={pet_sitting} />
-              <p className="text-card-service">Pet Sitting</p>
-            </div>
+            
             <div className="card-service">
               {" "}
               <img src={house_care} />
               <p className="text-card-service">Overnight Care</p>
+            </div>
+            <div className="card-service">
+              <img src={pet_sitting} />
+              <p className="text-card-service">Pet Sitting</p>
             </div>
             <div className="card-service">
               <img src={pad} />
@@ -95,8 +96,8 @@ export const Home = () => {
         </section>
 
         <section className="reserve-section">
-          <div className="border-r-8 border-dashed border-transparent border-r-coral_red rounded-r-full absolute w-[400px] h-[450px] left-[15rem] top-[3rem]"></div>
-          <div className="grid grid-cols-2 grid-rows-1 items-center w-full justify-items-end z-10">
+          <div className="border-r-8 border-dashed border-transparent border-r-coral_red rounded-r-full absolute w-[470px] h-[568px] left-[2rem] top-[3rem]"></div>
+          <div className="grid grid-cols-2 grid-rows-1 items-center w-full justify-items-start z-10">
             <div className="grid grid-rows-1 gap-40">
               <div className="card-service">
                 <img src={reserve} alt="reserve_calendar" />
@@ -135,7 +136,8 @@ export const Home = () => {
                   />
                 </div>
                 <button className="w-14 h-14 opacity-100 ml-[-3.9rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full">
-                  {"-->"}
+                <div className="relative w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-white"></div>
+
                 </button>
               </div>
             </div>

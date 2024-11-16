@@ -31,6 +31,7 @@ export const RoutesComponents = () => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         }
       />
@@ -40,6 +41,7 @@ export const RoutesComponents = () => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         }
       />
@@ -49,6 +51,7 @@ export const RoutesComponents = () => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         }
       />
@@ -58,6 +61,7 @@ export const RoutesComponents = () => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         }
       />
@@ -67,6 +71,7 @@ export const RoutesComponents = () => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         }
       />

@@ -36,7 +36,7 @@ body {
   @apply text-white font-poppins font-regular text-84 opacity-100;
 }
 .text-section-hero {
-  @apply text-white font-openSans font-regular text-start text-24 opacity-100;
+  @apply text-white font-openSans font-regular text-start text-24 opacity-100 w-[82%];
 }
 
 .border-left {
@@ -60,11 +60,11 @@ body {
 }
 
 .card-service {
-  @apply w-52 h-52 bg-white shadow-card_service rounded-cardradius opacity-100 grid-rows-1 justify-items-center flex items-center flex-col justify-around p-2;
+  @apply w-60 h-60 bg-white shadow-card_service rounded-cardradius opacity-100 grid-rows-1 justify-items-center flex items-center flex-col justify-around p-2;
 }
 
 .btn {
-  @apply bg-brightBlue text-smokeWhite rounded-btnradius shadow-btn_shadow w-btn_width h-btn_height transition-opacity ease-in-out duration-300;
+  @apply bg-brightBlue text-20 text-smokeWhite rounded-btnradius shadow-btn_shadow w-btn_width h-btn_height transition-opacity ease-in-out duration-300;
 }
 
 .btn:disabled {
@@ -84,11 +84,11 @@ body {
 }
 
 .main {
-  @apply w-full  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center gap-40 relative;
+  @apply w-[90%]  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center gap-40 relative pb-40 pt-40;
 }
 
 .hero-section {
-  @apply w-[90%] grid grid-cols-2 relative items-center h-full;
+  @apply w-[100%] grid grid-cols-2 relative items-center h-full;
 }
 .service-section {
   @apply w-[90%] grid grid-cols-2 relative place-items-start h-[65%];
@@ -99,15 +99,15 @@ body {
 }
 
 .reserve-section {
-  @apply w-[90%] grid grid-cols-2 relative items-baseline justify-items-center z-50;
+  @apply w-[90%] grid grid-cols-2 relative items-baseline justify-items-end z-50;
 }
 
 .suscription-section {
-  @apply w-[68%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
+  @apply w-[90%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
 }
 
 #root {
-  @apply w-full h-full;
+  @apply w-[100%] h-[100%] grid  justify-items-center;
 }
 
 .footer {
