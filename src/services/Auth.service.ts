@@ -8,13 +8,11 @@ export const loginUser = async (email: string, password: string, dispatch: any) 
       email,
       password,
     });
-    console.log(response.data.token)
     if (response.data.token) {
       dispatch(loginSucces(response.data.token));
       return response.data.token;
     }
   } catch (error) {
-    console.error("usuario o contraseña no registrado", error)
     dispatch(loginFailure("Usuario o contraseña incorrectos"));
     return null
   }

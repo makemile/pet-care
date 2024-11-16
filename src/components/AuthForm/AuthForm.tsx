@@ -9,7 +9,6 @@ import { Loading } from "../Loading/loading";
 
 export const AuthForm: React.FC = () => {
   const { login, isAuthenticated, loading, error } = useAuth();
-  console.log(loading);
   const navigate = useNavigate();
 
   const {
@@ -22,7 +21,6 @@ export const AuthForm: React.FC = () => {
 
   const onSubmit = (data: loginForm) => {
     login(data.email, data.password);
-    console.log("Estado de loading:", data.email, data.password);
   };
 
   useEffect(() => {
@@ -30,8 +28,6 @@ export const AuthForm: React.FC = () => {
       navigate("/home", { replace: true });
     }
   }, [isAuthenticated, navigate]);
-
-  console.log("Estado de loading:", loading);
 
   return (
     <>
