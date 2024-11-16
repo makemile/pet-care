@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   HeroSection,
   ServiceSection,
@@ -10,11 +11,13 @@ export const Home = () => {
   return (
     <>
       <main className="main">
-        <HeroSection />
-        <ServiceSection />
-        <ReviewServiceSection />
-        <ReserveSection />
-        <SuscriptionSection />
+        <Suspense fallback={<div>Loading </div>}>
+          <HeroSection />
+          <ServiceSection />
+          <ReviewServiceSection />
+          <ReserveSection />
+          <SuscriptionSection />
+        </Suspense>
       </main>
     </>
   );

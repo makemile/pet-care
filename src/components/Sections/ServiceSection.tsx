@@ -1,6 +1,7 @@
 import pet_sitting from "../../assets/svg/cat.svg";
 import house_care from "../../assets/svg/home.svg";
 import pad from "../../assets/svg/pad.svg";
+import dog from "../../assets/svg/dog.svg"
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
 export const ServiceSection = () => {
@@ -36,7 +37,8 @@ export const ServiceSection = () => {
         </div>
         <div className="grid grid-rows-2 grid-flow-col gap-8 w-full justify-end">
           <div className="card-service">
-            <p className="text-card-service">Dog Walking</p>
+            <img src={dog} alt="dog" />
+             <p className="text-card-service">Dog Walking</p>
           </div>
 
           <div className="card-service">
