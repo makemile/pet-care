@@ -5,6 +5,7 @@ import { Home } from "../pages/Home";
 import { useAuth } from "../hooks/useAuth";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer/Footer";
+import { NoFoundPage } from "../pages/NoFound/PageNoFound";
 
 export const RoutesComponents = () => {
   const { isAuthenticated } = useAuth();
@@ -75,6 +76,7 @@ export const RoutesComponents = () => {
           </>
         }
       />
+      <Route path="*" element={<NoFoundPage />} />
     </Routes>
   );
 };

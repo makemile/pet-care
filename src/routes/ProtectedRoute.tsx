@@ -11,7 +11,7 @@ export const ProtectdRoute: React.FC<ProtectedRouteProps> = ({
   isAuthenticated,
 }) => {
   if (!isAuthenticated) {
-    return <Navigate to="/" />;
+    return <Navigate to="/" replace/>;
   }
 
   return <>{children}</>;

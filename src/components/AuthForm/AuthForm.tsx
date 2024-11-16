@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { loginForm, loginSchema } from "../validateForm/LoginForm";
 import { useAuth } from "../../hooks/useAuth";
 import { Input } from "../Input";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import sppiner from "../../assets/images/spinner.svg";
 
 export const AuthForm: React.FC = () => {
@@ -26,9 +26,9 @@ export const AuthForm: React.FC = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/home");
+      navigate("/home", { replace: true });
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, navigate]);
 
   return (
     <form
@@ -85,6 +85,7 @@ export const AuthForm: React.FC = () => {
           </button>
         )}
       </div>
+      <p className="text-lightGray font-openSans font-regular text-14 flex justify-center mt-4 gap-1">AÚN NO TENGO CUENTA <NavLink to={"/"} className="text-navyBlue font-openSans font-regular text-14">REGISTRARSE</NavLink></p>
       {error && <p className="text-red-500">{error}</p>}
     </form>
   );
