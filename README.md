@@ -16,9 +16,8 @@ Welcome to the pet care platform, a safe space to accompany you and guide you in
 | Tecnología      | Descripción                          |
 |------------------|--------------------------------------|
 | ⚛️ **React**        | Biblioteca para construir UI         |
-|    **TypesCript**       | Superset de JavaScript con tipado estático para mejorar la calidad y mantenimiento del código.     |
-| ![image](https://github.com/user-attachments/assets/4b211c95-cb4d-4920-9f43-9f3576d22c2e)
-   **Redux**       | A JS library for predictable global state management.     |
+|    **TypesCript**       | Superset de JavaScript con tipado estático para mejorar la calidad y mantenimiento del código.|
+|   **Redux**       | A JS library for predictable global state management.|
 | 🎨 **Tailwind CSS** | Framework CSS para diseño moderno    |
 |    **Vite**         | Herramienta de compilación               |
 
