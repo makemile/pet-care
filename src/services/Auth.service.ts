@@ -10,7 +10,7 @@ export const loginUser = async (email: string, password: string, dispatch: any) 
     });
     console.log(response.data.token)
     if (response.data.token) {
-      dispatch(loginSucces(response.data.token)); // Si la respuesta es exitosa, actualizamos Redux con el token
+      dispatch(loginSucces(response.data.token));
       return response.data.token;
     }
   } catch (error) {

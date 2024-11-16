@@ -106,8 +106,11 @@ body {
   @apply w-[90%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
 }
 
+.custom-border-radius{
+  border-radius: 10px 100px / 120px;
+}
 #root {
-  @apply w-[100%] h-[100%] grid  justify-items-center;
+  @apply w-[100%] h-[100%] grid  justify-items-center items-center;
 }
 
 .footer {
