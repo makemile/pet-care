@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/16/solid";
 export const Footer = () => {
   return (
     <footer className="footer">
@@ -47,8 +48,8 @@ export const Footer = () => {
               className="rounded-full w-64 h-14 outline-none pl-7 shadow-md"
             />
           </div>
-          <button className="w-12 h-12 opacity-100 ml-[-3.5rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full">
-            {"-->"}
+          <button className="w-12 h-12 opacity-100 ml-[-3.5rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full flex items-center justify-center">
+          <ArrowRightIcon className={"h-10 w-10 text-white"}/>
           </button>
         </div>
       </div>

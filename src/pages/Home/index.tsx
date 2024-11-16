@@ -1,6 +1,5 @@
 import { MainLayoutHero } from "../../components/Layout/Main/MainLayoutHero";
 import dog_golden from "../../assets/images/pet_golden.png";
-import dog_walk from "../../assets/svg/dog.svg";
 import pet_sitting from "../../assets/svg/cat.svg";
 import house_care from "../../assets/svg/home.svg";
 import pad from "../../assets/svg/pad.svg";
@@ -9,6 +8,7 @@ import reserve from "../../assets/svg/reserve.svg";
 import relax from "../../assets/svg/relax.svg";
 import match from "../../assets/svg/match.svg";
 import dog_footer from "../../assets/images/dog.png";
+import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
 export const Home = () => {
   return (
@@ -61,14 +61,14 @@ export const Home = () => {
                   className="rounded-full w-52 h-16 outline-none pl-7 shadow-md"
                 />
               </div>
-              <button className="w-14 h-14 opacity-100 ml-[-3.9rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full">
-                {"-->"}
+              <button className="w-14 h-14 flex items-center justify-center opacity-100 ml-[-3.9rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full">
+                <ArrowRightIcon className={"h-10 w-10 text-white"}/>
               </button>
             </div>
           </div>
           <div className="grid grid-rows-2 grid-flow-col gap-8 w-full justify-end">
             <div className="card-service">
-              <img src={dog_walk} />
+              
               <p className="text-card-service">Dog Walking</p>
             </div>
 
@@ -135,8 +135,8 @@ export const Home = () => {
                     className="rounded-full w-52 h-16 outline-none pl-7 shadow-md"
                   />
                 </div>
-                <button className="w-14 h-14 opacity-100 ml-[-3.9rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full">
-                <div className="relative w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[12px] border-l-white"></div>
+                <button className="w-14 h-14 opacity-100 ml-[-3.9rem] mt-[0.3rem] shadow-btn_zipcode bg-coral_red rounded-full flex items-center justify-center">
+                <ArrowRightIcon className={"h-10 w-10 text-white"}/>
 
                 </button>
               </div>
