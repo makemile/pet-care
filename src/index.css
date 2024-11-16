@@ -1,3 +1,128 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  @apply bg-gray_light w-full h-[100vh] m-auto flex justify-center items-center;
+}
+
+.text-place-holder {
+  @apply font-openSans text-lightGray text-18 font-regular uppercase;
+}
+
+.text-forget-password {
+  @apply font-openSans text-lightGray text-14 font-regular;
+}
+
+.text-sign-in {
+  @apply font-openSans text-navyBlue text-14 font-regular;
+}
+
+.text-btn-login {
+  @apply font-openSans font-bold text-20;
+}
+
+.text-welcomeLogin {
+  @apply text-darkGray text-25 uppercase opacity-100 font-gibson font-semibold;
+}
+
+.text-section-hero-title {
+  @apply text-white font-poppins font-regular text-84 opacity-100;
+}
+.text-section-hero {
+  @apply text-white font-openSans font-regular text-start text-24 opacity-100 w-[82%];
+}
+
+.border-left {
+  @apply border-l-8 border-coral_red h-10;
+}
+
+.text-items-nav {
+  @apply text-18 font-openSans font-normal text-white opacity-100;
+}
+
+.text-items-footer {
+  @apply text-white text-14 font-comfortaa font-regular;
+}
+
+.text-title-footer {
+  @apply text-yellow_vivid text-24 font-comfortaa font-bold;
+}
+
+.text-card-service {
+  @apply text-24 font-comfortaa font-regular text-gray_medium;
+}
+
+.card-service {
+  @apply w-60 h-60 bg-white shadow-card_service rounded-cardradius opacity-100 grid-rows-1 justify-items-center flex items-center flex-col justify-around p-2;
+}
+
+.btn {
+  @apply bg-brightBlue text-20 text-smokeWhite rounded-btnradius shadow-btn_shadow w-btn_width h-btn_height transition-opacity ease-in-out duration-300;
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.inputForm {
+  @apply bg-white shadow-input_shadow opacity-100 w-input_width h-input_height py-3 px-4 outline-none;
+}
+
+.section_header {
+  @apply w-full bg-coral_red flex justify-center;
+}
+
+.header {
+  @apply bg-coral_red flex w-[90%] justify-between  items-center;
+}
+
+.main {
+  @apply w-[90%]  justify-center bg-gray_light  grid grid-rows-2 justify-items-center items-center gap-40 relative pb-40 pt-40;
+}
+
+.hero-section {
+  @apply w-[100%] grid grid-cols-2 relative items-center h-full;
+}
+.service-section {
+  @apply w-[90%] grid grid-cols-2 relative place-items-start h-[65%];
+}
+
+.reviewservice-section {
+  @apply w-[90%]  h-[65%] grid grid-rows-2 justify-items-center;
+}
+
+.reserve-section {
+  @apply w-[90%] grid grid-cols-2 relative items-baseline justify-items-end z-50;
+}
+
+.suscription-section {
+  @apply w-[90%] grid grid-cols-2 bg-gradient-to-br from-[#3F81FC] via-[#4182FC] to-[#3E7FF9] opacity-100 rounded-2xl;
+}
+
+.custom-border-radius{
+  border-radius: 10px 100px / 120px;
+}
+#root {
+  @apply w-[100%] h-[100%] grid  justify-items-center items-center;
+}
+
+.footer {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full bg-coral_red h-[350px]  rounded-top_full items-center justify-items-center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ff6752 !important;
+  font-size: 64px !important;
+}
+
+.slick-prev {
+  left: -80px !important;
+}
